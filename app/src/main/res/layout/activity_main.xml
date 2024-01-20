@@ -1,43 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
+
+    <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="419dp" />
+        android:id="@+id/hotelname"
+        android:text="@string/le_grand_hotel"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#FF9800"
+        android:layout_margin="20dp"
+        android:fontFamily="cursive"
+       android:textStyle="bold"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/card1"
+        android:layout_below="@+id/hotelname"
+        app:cardCornerRadius="10dp"
+        android:elevation="6dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/singlebedimage"
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        app:srcCompat="@drawable/singlebed" />
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="85dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/descriptonofhotel"
+        android:text="@string/description_singlebedroom"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="#FF9800"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
 
-    <Switch
-        android:id="@+id/switch1"
+        />
+
+    <Button
+        android:id="@+id/singlebedbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="504dp" />
+        android:layout_gravity="center_horizontal"
 
-    <EditText
-        android:id="@+id/editTextText"
+        android:text="Button" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="320dp" />
+        android:id="@+id/card2"
+        android:layout_below="@+id/card1"
+        app:cardCornerRadius="10dp"
+        android:elevation="6dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/doublebedimage"
+                android:layout_width="match_parent"
+                android:layout_height="350sp"
+                app:srcCompat="@drawable/doublebed" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptonofhotel2"
+                android:text="@string/description_singlebedroom"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textColor="#FF9800"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:id="@+id/doublebedbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:text="Button" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+
+
+</ScrollView>

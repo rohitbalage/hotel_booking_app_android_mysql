@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hotel booking</string>
+    <string name="le_grand_hotel">Le Grand Hotel</string>
+    <string name="description_singlebedroom"><![CDATA[Cozy haven for solo seekers. Compact comfort. Big amenities, small package. Work, sleep, explore - your private city nest. Ideal for solo adventures & budget wins. Book your chic retreat now! 5 lines, check! ✨]]></string>
 </resources>
